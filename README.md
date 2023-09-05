@@ -1,1 +1,1 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+Welcome to To Infinity and Beyond! This is where dreams come true. Always wanted to fly a non-regulated jetpack into space? Well, now you can! Please leave reviews and tell the owner whether or not you died :)
