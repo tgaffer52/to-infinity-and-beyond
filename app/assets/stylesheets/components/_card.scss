@@ -5,36 +5,67 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+
+  img {
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .card-booking-infos {
+    padding: 16px;
+  }
+
+  .btn {
+    border-radius: 10px;
+  }
+
+  .btn-danger {
+    color: white;
+  }
 }
 
-.card-booking img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
+.jetpack-card-title {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  text-overflow: ellipsis;
+
+  &:hover {
+    color: #bf3f00;
+    transition-duration: 1s;
+  }
 }
 
-.card-booking h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
+.card {
+  width: 16rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.40);
+
+  &:hover {
+    box-shadow: 0 0 15px rgba(253, 0, 0, 0.4);
+    transition-duration: 1s;
+  }
 }
 
-.card-booking p {
-  font-size: 20px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+.card:hover .info-icon {
+  opacity: 100%;
+  transition: opacity 1s;
 }
 
-.card-booking .card-booking-infos {
-  padding: 16px;
-}
-
-.card-booking .btn {
-  border-radius: 10px;
-}
-
-.card-booking .btn-danger {
-  color: white;
+.card-title {
+  text-decoration: none;
 }

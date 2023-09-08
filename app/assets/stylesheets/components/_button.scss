@@ -3,16 +3,30 @@
   padding: 8px 24px;
   border-radius: 11px;
   background: #C16320;
-  transition: background 0.3s ease;
+
+  &:hover {
+    background: #4D04C4;
+    color: white;
+    transition-duration: 1s;
+  }
 }
 
-.btn-orange:hover {
-  background: #4D04C4;
+.btn-red {
+  text-decoration: none;
   color: white;
+  padding: 8px 17px;
+  border-radius: 11px;
+  background: #B90000;
+  margin-right: 16px;
+
+  &:hover {
+    color: white;
+    background: #d65a02;
+    transition-duration: 1s;
+  }
 }
 
 .btn-purple {
-  display: block;
   padding: 5px 10px;
   background-color: #502967;
   color: white;
@@ -29,7 +43,6 @@
 }
 
 .btn-midnight {
-  display: block;
   padding: 5px 10px;
   background-color: #2e2967;
   color: white;
@@ -46,7 +59,6 @@
 }
 
 .btn-gray {
-  display: block;
   padding: 5px 10px;
   background-color: #404040;
   color: white;
@@ -61,9 +73,20 @@
     transition-duration: 1s;
   }
 }
+.btn-light-gray {
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #404040;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+  }
+}
 
 .btn-white {
-  display: block;
   padding: 5px 10px;
   background-color: #BCBCBC;
   color: black;
@@ -81,7 +104,6 @@
 }
 
 .btn-white-outline {
-  display: block;
   padding: 5px 10px;
   border-radius: 11px;
   border: 1px solid #bcbcbc;
@@ -91,6 +113,31 @@
     background-color: #bcbcbc;
     border: 1px solid #BCBCBC;
     text-decoration: none;
+    transition-duration: 1s;
+  }
+}
+
+.btn-pink {
+  background-color: $pink;
+
+  &:hover {
+    background-color: #68F2F9;
+    transition-duration: 1s;
+  }
+}
+
+.info-icon {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  background-color: #fb8b39;
+  color: white;
+  opacity: 0%;
+  padding: 5px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: red;
     transition-duration: 1s;
   }
 }

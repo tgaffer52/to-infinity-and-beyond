@@ -1,34 +1,34 @@
 <div class="index-background">
   <div class="container d-flex flex-wrap">
     <div class="me-3 d-flex w-100 justify-content-end">
-      <%= link_to "Add Jetpack", new_jetpack_path, class: "btn btn-orange mt-3 justify-content-end" %>
+      <%= link_to "Add Jetpack", new_jetpack_path, class: "btn-red mt-3 justify-content-end" %>
     </div>
     <div class="row">
       <% @jetpacks.each do |jetpack| %>
         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-          <div class="card m-3" style="width: 16rem; box-shadow: 0 0 15px rgba(0,0,0,0.40);">
+          <div class="card m-3 position-relative">
             <% if jetpack.photo.attached? %>
               <%= cl_image_tag jetpack.photo.key, height: 230, style: "object-fit: cover;", class: "card-img-top" %>
             <% else %>
               <img class="card-img-top" src=<%= image_path('default.jpg') %> alt="Default jetpack picture">
             <% end %>
             <div class="card-body">
-              <h5 class="card-title text-truncate"><%= jetpack.title %></h5>
+               <%= link_to jetpack.title, jetpack, class: "card-title fw-bold fs-5 text-truncate d-block link-dark stretched-link" %>
               <div class="container px-0">
                 <div class="row align-items">
                   <div class="col-6">
-                    <p class="card-text text-start text-truncate" style="font-weight: bold" ><%= jetpack.model %></p>
+                    <p class="card-text text-start text-truncate"><%= jetpack.model %></p>
                   </div>
                   <div class="col-6">
-                    <p class="card-text font-weight-bold text-end" style="font-weight: bold; font-size: large" >$<%= sprintf("%.2f", jetpack.price) %></p>
+                    <p class="card-text text-end fw-bold fs-5">$<%= sprintf("%.2f", jetpack.price) %></p>
                   </div>
                 </div>
               </div>
-              <%= link_to "More details", jetpack_path(jetpack), class: "btn btn-warning btn-block w-100" %>
+              <i class="fa-solid fa-circle-info info-icon"></i>
             </div>
           </div>
         </div>
-        <% end %>
-      </div>
+      <% end %>
+    </div>
   </div>
 </div>

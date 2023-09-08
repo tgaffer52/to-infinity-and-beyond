@@ -45,7 +45,7 @@ puts "Done!"
 # 10.times do
 jetpack = Jetpack.new(
   title: "Helicopter from Hell",
-  model: Faker::Science.tool,
+  model: Faker::Vehicle.model,
   price: rand(100.300),
   description: "Ride like a helicopter...from hell",
   user: User.all.sample
