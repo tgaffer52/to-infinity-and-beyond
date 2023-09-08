@@ -16,11 +16,11 @@
                <%= link_to jetpack.title, jetpack, class: "card-title fw-bold fs-5 text-truncate d-block link-dark stretched-link" %>
               <div class="container px-0">
                 <div class="row align-items">
-                  <div class="col-6">
+                  <div class="col-8">
                     <p class="card-text text-start text-truncate"><%= jetpack.model %></p>
                   </div>
-                  <div class="col-6">
-                    <p class="card-text text-end fw-bold fs-5">$<%= sprintf("%.2f", jetpack.price) %></p>
+                  <div class="col-4">
+                    <p class="card-text text-end fw-bold fs-3 pb-0 mb-0">$<%= jetpack.price.to_i %></p>
                   </div>
                 </div>
               </div>

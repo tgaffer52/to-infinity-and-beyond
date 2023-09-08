@@ -45,7 +45,7 @@ puts "Done!"
 # 10.times do
 jetpack = Jetpack.new(
   title: "Helicopter from Hell",
-  model: Faker::Vehicle.model,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Ride like a helicopter...from hell",
   user: User.all.sample
@@ -57,7 +57,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "Miami Style",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Fly around like a dolphin straight out of Miami beach",
   user: User.all.sample
@@ -69,7 +69,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "Advanced Warfighter Jetpack",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Ever played Call of Duty Advanced warfighter?",
   user: User.all.sample
@@ -81,7 +81,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "The Squatter",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Sit down, relax, and fly with this jetpack!",
   user: User.all.sample
@@ -94,7 +94,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "Water Glider",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Ariel said she wanted human legs. This will make her wish she had fins again",
   user: User.all.sample
@@ -106,7 +106,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "El Classico",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "A jetpack. What else could you want?",
   user: User.all.sample
@@ -118,7 +118,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "Mando",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Baby Yoda would be proud",
   user: User.all.sample
@@ -130,7 +130,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "The Falcon",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Have so much fun you'll forget how bad Falcon and the Winter soldier was",
   user: User.all.sample
@@ -142,7 +142,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "The Original Infinity",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Make Woody jealous with this jetpack made to make you reconnect with your youth!",
   user: User.all.sample
@@ -154,7 +154,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "The Not a Jetpack Jetpack",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "With great power comes great Jetpacks",
   user: User.all.sample
@@ -166,7 +166,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "The Space Junky",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "This Jetpack is out of this world...",
   user: User.all.sample
@@ -178,7 +178,7 @@ puts "Creating jetpack number #{jetpack.id}"
 
 jetpack = Jetpack.new(
   title: "The Gas Guzzler",
-  model: Faker::Science.tool,
+  model: Faker::Company.name + " " + Faker::Vehicle.version,
   price: rand(100.300),
   description: "Punch mother nature in the face with a jetpack meant burn through gas like a wildfire in california",
   user: User.all.sample
