@@ -10,6 +10,8 @@ require "open-uri"
 # puts "Destroying all users"
 # User.destroy_all
 # puts "Done!"
+puts "Destroying users"
+User.destroy_all
 
 puts "Creating 5 users"
 5.times do
@@ -36,9 +38,9 @@ User.create!(
   password: "123456",
 )
 
-# puts "Destroying all jetpacks"
-# Jetpack.destroy_all
-# puts "Done!"
+puts "Destroying all jetpacks"
+Jetpack.destroy_all
+puts "Done!"
 
 # 10.times do
 jetpack = Jetpack.new(
